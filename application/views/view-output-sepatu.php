@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Tampil Data Matakuliah</title>
+    <title>Tampil Output Penjualan Sepatu</title>
 </head>
 
 <body>
@@ -9,7 +9,7 @@
         <table> 
             <tr> 
                 <th colspan="3"> 
-                    Tampil Data Mata Kuliah 
+                    Tampil Data Transaksi Penjualan Toko Sepatu
                 </th> 
             </tr> 
             <tr> 
@@ -18,29 +18,43 @@
                 </td> 
             </tr>
             <tr> 
-                <th>Kode MTK</th> 
+                <th>Nama Pembeli</th> 
                 <th>:</th> 
-                <td> 
-                    <?= $kode; ?> 
-                </td> 
-            </tr> 
-            <tr> 
-                <td>Nama MTK</td> 
-                <td>:</td> 
                 <td> 
                     <?= $nama; ?> 
                 </td> 
-            </tr>
+            </tr> 
             <tr> 
-                <td>SKS</td> 
+                <td>No. Hp</td> 
                 <td>:</td> 
                 <td> 
-                    <?= $sks; ?> 
+                    <?= $no; ?> 
+                </td> 
+            </tr>
+            <tr> 
+                <td>Merk Sepatu</td> 
+                <td>:</td> 
+                <td> 
+                    <?= $merk; ?> 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>harga</td> 
+                <td>:</td> 
+                <td> 
+                    <?= $harga; ?> 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Ukuran Sepatu</td> 
+                <td>:</td> 
+                <td> 
+                    <?= $ukr; ?> 
                 </td> 
             </tr> 
             <tr> 
                 <td colspan="3" align="center"> 
-                    <a href="<?= base_url('matakuliah'); ?>">Kembali</a> 
+                    <a href="<?= base_url('tokosepatu'); ?>">Kembali</a> 
                 </td>
             </tr>
         </table>
